@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google APIs -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+     
+     <style> 
+        p { 
+          text-align: center; 
+          font-size: 60px; 
+        }  
+    </style> 
+</head>
+
+<body>
+    <!-- This is my Navbar outside of a container. -->
+    <nav class="navbar navbar-expand-lg bg-dark custom-border">
+        <h1 class="navbar-brand d-flex justify-content-center text-white custom-background">Code Quiz</h1>
+    </nav>
+
+<section>
+    <div>
+    <h4 class="text-white">Coding Quiz Challenge</h4>
+        <button id="highscore" class="btn btn-dark justify-content-center" type="submit">View Highscores</button>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+        <p id="score">Score:</p>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div id="clockdiv">
+            <div> 
+                <h6 class="text-white">Timer:</h6>
+                <!-- <p id="Time:"></p> -->
+                <span class="seconds" id="seconds-left"></span> 
+                <h6 class="smalltext text-white">Seconds</h6> 
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="default">
+                <p id="intro">Test your coding knowledge.  Answer the questions quickly, but be careful.  Wrong answers will result in less time on the clock.
+                    Good Luck!
+                </p>
+                <div class="row">
+                    <button id="start" class="btn btn-dark justify-content-center" type="submit">Start the Quiz!</button>
+                </div>
+            </div>
+            <div id="questions"></div>
+            <div class="hide" class="btn btn-dark" id="buttonContainer">
+                
+            </div>
+        </div>
+
+        <div class="highscore">
+            <form id="highscore-form">
+              <!-- <label for="highscore-text">Add a Todo:</label> -->
+              <input type="text" placeholder="Your Name" class="hide" id="highscore-text"/>
+            </form>
+            <ol id="highscoreList"></ol>
+          </div>
+    
+        <div class="hide" id="restartButton">
+            <button id="restart" class="btn btn-dark justify-content-center" type="submit">Restart the Quiz!</button>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer fixed-bottom footer-dark bg-dark d-flex justify-content-center custom-footerborder">
+        <p class="navbar-brand text-white custom-background">Alia Kyle Perry 2020 &copy;</p>
+    </footer>  
+
+    <!-- JavaScript Code -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="./assets/javascript/logic.js"></script>
+<script src="./assets/javascript/questions.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>
